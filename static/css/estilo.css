@@ -2,5 +2,12 @@ h1 {
     border: 2px #eee solid;
     color: brown;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+}
+p{
+text-transform: uppercase;
+text-align: center;
+width: 300px:
+font-size: 22px;
+font-family: verdana;
 }
