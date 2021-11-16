@@ -1,23 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{% block title %} Create a New Post {% endblock %}</h1>
+<h1>{% block title %} Envio de nova contribuição {% endblock %}</h1>
 
 <form method="post">
     <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Nome do Contribuidor</label>
         <input type="text" name="title"
-               placeholder="Post title" class="form-control"
-               value="{{ request.form['title'] }}"></input>
+               placeholder="Nome do contribuidor" class="form-control"
+               value="{{ request.form['title'] }}"
+        </input>
     </div>
 
     <div class="form-group">
-        <label for="content">Content</label>
-        <textarea name="content" placeholder="Post content"
+        <label for="content">Valor da contribuição:</label>
+        <textarea name="content" placeholder="valor da contribuição"
                   class="form-control">{{ request.form['content'] }}</textarea>
     </div>
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Enviar contribuição</button>
     </div>
 </form>
 {% endblock %}

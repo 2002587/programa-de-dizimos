@@ -1,15 +1,33 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>{% block title %} Santa Pecúnia - Quero Ofertar!!! {% endblock %}</h1>
-    {% for post in posts %}
-        <a href="{{ url_for('post', post_id=post['id'])}}">
-            <h2>{{ post['title'] }}</h2>
-        </a>
-        <span class="badge badge-primary">{{ post['created'] }}</span>
-        <a href="{{ url_for('edit', id=post['id']) }}">
-            <span class="badge badge-warning">Edit</span>
-        </a>
-        <hr>
-    {% endfor %}
+<h1>{% block title %} 3ª Igreja Presbiteriana de Carapicuiba {% endblock %}</h1>
+<p class="lead text-justify">
+
+ "Cada um contribua segundo propôs no seu coração, <br>
+ não com tristeza ou por necessidade; porque Deus ama <br>
+    ao que dá com alegria." <br>(2 Co 9.7)
+ </p>
+
+ <footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<address>
+					<ul class="list-unstyled">
+						<li>
+							<a>Av. Amazonas, 1.255, <br>
+							Cohab - Carapicuiba/SP<br></a>
+						</li>
+						<li>Fone: <a> tel 11-00000-0000</a></li>
+							</ul>
+				</address>
+			</div>
+
+						<div class="col-md-3">
+
 {% endblock %}
+
+
+
+

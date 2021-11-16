@@ -60,7 +60,7 @@ def edit(id):
         content = request.form['content']
 
         if not title:
-            flash('Titulo é obrigatório!!')
+            flash('Nome é obrigatório!!')
         else:
             post.title = title
             post.content = content
