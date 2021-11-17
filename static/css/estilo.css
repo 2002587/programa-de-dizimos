@@ -7,11 +7,11 @@ h1 {
     padding: 32px;
 }
 
-
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+.container{
+    border: 3px solid yellowgreen;
+    min-height: 500px;
 }
+
+.div1{
+border: 2px solid red;
 }
