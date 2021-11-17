@@ -11,35 +11,56 @@
         <script type="text/javascript" src="bootstrap-4.0.0-dist/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
         <style type="text/css">
+            #azul{
+            background-color: #0000fff;
+            height: 30px;
+            }
+            #vermelho{
+            background-color: #cc0000;
+            height: 80px;
+            }
+            #cinza{
+            background-color: #ccc;
+            }
             div{
             <!-- border: 1px solid #000; --!>
             min-height: 100px;
             }
+            @media screen and (max-width: 576px){
+                #vermelho{
+                height: 45px;
+                }
+
         </style>
-    <title>{% block title %} {% endblock %}</title>
+  <!--  <title>{% block title %} {% endblock %}</title> --!>
   </head>
   <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 col-xs-12">
+            <div id="vermelho" class="col-sm-3 col-xs-12">
+                <!-- <div id="vermelho" class="col-sm-10"> --!>
                 <a class="navbar-brand" href="{{ url_for('index')}}">Santa Pecúnia</a>
-            </div>
-            <div class="col-sm-6 col-xs-12">
-                <a class="nav-item">
                 <a class="nav-link" href="{{url_for('create')}}">Quero ofertar</a>
+            <!-- </div> --!>
+                <!-- </div> --!>
+            <!-- <div class="col-sm-6 col-xs-12"> --!>
+                <!-- <a class="nav-item"> --!>
+                <!-- <a class="nav-link" href="{{url_for('create')}}">Quero ofertar</a> --!>
             </div>
         </div>
-        </div>
-    </nav>
+    </div>
+    <!-- </nav> --!>
 
-    <!-- <div class="container-fluid"> !-->
+    <div class="container-fluid">
+        <div class="row">
+            <div id="cinza">
         {% for message in get_flashed_messages() %}
-            <!--<div class="alert alert-danger">{{ message }}</div> --!>
-
+            <div class="alert alert-danger">{{ message }}</div>
+            </div>
 
         {% endfor %}
         {% block content %} {% endblock %}
-
+        </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
