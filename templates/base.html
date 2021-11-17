@@ -35,7 +35,8 @@
   <!--  <title>{% block title %} {% endblock %}</title> --!>
   </head>
   <body>
-    <div class="container-fluid">
+
+      <div class="container-fluid">
         <div class="row">
             <div id="vermelho" class="col-sm-3 col-xs-12">
                 <!-- <div id="vermelho" class="col-sm-10"> --!>
@@ -53,6 +54,7 @@
 
     <div class="container-fluid">
         <div class="row">
+
             <div id="cinza">
         {% for message in get_flashed_messages() %}
             <div class="alert alert-danger">{{ message }}</div>
@@ -61,6 +63,13 @@
         {% endfor %}
         {% block content %} {% endblock %}
         </div>
+
+
+        <div class="container" id="row">
+
+            <img src="bootstrap-4.0.0-dist/imagens/layout.jpg" class="img-thumbnail center-block" alt="Santa Pecúnia" />
+
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
