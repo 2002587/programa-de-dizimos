@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ccb58cd-12e2-4b1b-994d-6d9a1923f5b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/imagens/Layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/layout.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base (cópia).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/create (cópia).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/edit (cópia).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index (cópia).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post (cópia).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sobre (cópia).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-4.0.0-dist/imagens/Layout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap-4.0.0-dist/imagens/layout.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sobre.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sobre.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +34,15 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="20nUsRxqNtJU1DTKT0he9Jha0lp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
@@ -94,5 +103,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

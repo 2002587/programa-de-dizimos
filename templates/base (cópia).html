@@ -28,47 +28,52 @@
             background-color: #ccc;
             }
             div{
+            <!-- border: 1px solid #000; --!>
             min-height: 100px;
             }
             @media screen and (max-width: 576px){
                 #vermelho{
                 height: 45px;
                 }
-        </style>
 
-      <title>
-          {% block title %} 3ª Igreja Presbiteriana de Carapicuiba {% endblock %}
-      </title>
+        </style>
+      <title>{% block title %} 3ª Igreja Presbiteriana de Carapicuiba {% endblock %}</title>
     </head>
   <body>
+<!-- <div class="container"> --!>
       <div class="container-fluid">
         <div class="row">
             <div id="vermelho" class="col-sm-12 col-xs-12 div1">
+                <!-- <div id="vermelho" class="col-sm-10"> --!>
                 <a class="navbar-brand" href="{{ url_for('index')}}">Santa Pecúnia</a>
-
-                <a class="navbar-brand nav-link" href="{{url_for('create')}}">Quero ofertar</a>
-
-
+                <a class="nav-link" href="{{url_for('create')}}">Quero ofertar</a>
+            <!-- </div> --!>
+                <!-- </div> --!>
+            <!-- <div class="col-sm-6 col-xs-12"> --!>
+                <!-- <a class="nav-item"> --!>
+                <!-- <a class="nav-link" href="{{url_for('create')}}">Quero ofertar</a> --!>
             </div>
         </div>
-      </div>
-
+    </div>
+    <!-- </nav> --!>
 
     <div class="container-fluid">
         <div class="row">
-            <div id="cinza" class="col-sm-12 col-xs-12 div1">
-                {% for message in get_flashed_messages() %}
-                <div class="alert alert-danger">{{ message }}</div>
+
+            <div id="cinza">
+        {% for message in get_flashed_messages() %}
+            <div class="alert alert-danger">{{ message }}</div>
             </div>
 
         {% endfor %}
         {% block content %} {% endblock %}
         </div>
-    </div>
+
 
         <div class="container" id="row">
         <a href="#">
             <img src="/home/univesp/programa_dizimos/Layout.png" alt="Santa Pecúnia" class="img-responsive">
+            <img src="https://i.stack.imgur.com/hvQfa.png" width="30" height="30" alt="imag">
         </a>
   </div>
 
