@@ -15,8 +15,8 @@ db = SQLAlchemy(app)
 class Posts(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     created = db.Column(db.DateTime, default=datetime.datetime.utcnow)
-    title = db.Column(db.String(80), nullable=False)
-    content = db.Column(db.String(288), nullable=False)
+    title = db.Column(db.String(100), nullable=False)
+    content = db.Column(db.String(80), nullable=False)
 
 @app.route('/')
 def index():
@@ -39,10 +39,11 @@ def post(post_id):
 def create():
     if request.method == 'POST':
         title = request.form['title']
+        telefone = request.form['telefone']
         content = request.form['content']
 
         if not title:
-            flash('Título é obrigatório!!!')
+            flash('Nome é obrigatório!!!')
         else:
             post = Posts(title=title, content=content)
             db.session.add(post)
@@ -58,6 +59,7 @@ def edit(id):
 
     if request.method == 'POST':
         title = request.form['title']
+        telefone = request.form['telefone']
         content = request.form['content']
 
         if not title:

@@ -15,6 +15,23 @@
     </div>
 
     <div class="form-group">
+        <label for="telefone">Número Telefone</label>
+        <input type="number" name="telefone"
+               placeholder="Número do Telefone" class="form-control"
+               value="{{ request.form['telefone'] }}"
+        </input>
+    </div>
+
+
+    <div class="form-group">
+        <label for="campanha">Campanha</label>
+        <input type="text" name="campanha"
+               placeholder="Nome da Campanha" class="form-control"
+               value="{{ request.form['campanha'] }}"
+        </input>
+    </div>
+
+    <div class="form-group">
         <label for="content">Valor da contribuição:</label>
         <textarea name="content" placeholder="valor da contribuição"
                   class="form-control">{{ request.form['content'] }}</textarea>
