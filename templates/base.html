@@ -9,10 +9,10 @@
 
         <!-- Bootstrap CSS -->
         <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">"
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">"
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="templates/css/normalize.css">
         <link rel="stylesheet" href="bootstrap/-4.0.0-dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -52,15 +52,21 @@
   <nav>
       <ul>
           <li> <a href="#sobre">Sobre </a></li>
-          <li><a href="#ofertar">Quero ofertar</a></li>
+          <!-- <li><a href="#ofertar">Quero ofertar</a></li> --!>
+          <li><a class="nav-link" href="{{url_for('create')}}">Quero ofertar</a></li>
           <li><a href="#contato">Contato</a></li>
       </ul>
   </nav>
 
   <header id="topo">
       <h1> Santa Pecúnia - 3ª Igreja Presbiteriana de Carapicuiba</h1>
+
       <p>
-          Inserir um texto sobre o projeto
+      <p class="lead text-justify">
+ "Cada um contribua segundo propôs no seu coração, <br>
+ não com tristeza ou por necessidade; porque Deus ama <br>
+    ao que dá com alegria." <br>(2 Co 9.7)
+      </p>
       </p>
       <a href="#ofertar" class="botao">Como posso fazer a contribuição</a>
   </header>
@@ -74,7 +80,6 @@
   <section id="sobre">
       <h2>Sobre o projeto</h2>
       <div>
-          <img src="/home/univesp/programa_dizimos/imagens/Layout.png" alt="layout">
           <h3>
               sobre o projeto - Dízimo - etc etc
           </h3>
@@ -89,12 +94,10 @@
       <h2>Contato</h2>
       <p>Vem falar com a gente</p>
       <div>
-          <img src="/home/univesp/programa_dizimos/imagens/tel.png" alt="telefone">
           <p> <a hreg="11975694631">(11)974694631</a></p>
       </div>
 
       <div>
-          <img src="/home/univesp/programa_dizimos/imagens/mail.png" alt="email">
           <p> <a hreg="mailto: contato@prebisterianacarapicuiba.com">E-mail: contato@prebisterianacarapicuiba.com</a></p>
       </div>
 
@@ -128,11 +131,7 @@
         </div>
     </div>
 
-        <div class="container" id="row">
-        <a href="#">
-            <img src="/home/univesp/programa_dizimos/Layout.png" alt="Santa Pecúnia" class="img-responsive">
-        </a>
-  </div>
+
 </ul>
       </nav>
     <!-- Optional JavaScript -->

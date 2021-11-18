@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 h1 {
-    border: 3px #eee solid;
+    /* border: 3px #eee solid; */
     color: blue;
     text-align: center;
     padding: 40px;
@@ -173,7 +173,7 @@ footer a{
 .navbar-brand
 {
     position: relative;
-    background: url(../imagens/Layout.png);
+    /* background: url(../imagens/Layout.png); */
     width: 300px;
     left: 5px;
     background-size: contain;
