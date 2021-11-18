@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 h1 {
-    border: 3px #eee solid;    color: blue;
+    border: 3px #eee solid;
+    color: blue;
     text-align: center;
     padding: 40px;
 }
@@ -15,9 +16,6 @@ h1 {
     min-height: 500px;
 }
 
-.div1{
-border: 1px solid red;
-}
 
 body{
     font-family: Nunito, sans-serif;
@@ -81,7 +79,8 @@ nav ul li a{
 
 /*cabeçalho */
 
-header{
+header
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,6 +168,7 @@ footer a{
     text-decoration: none;
     color: #00FFFF;
 }
+
 .navbar-brand
 {
     position: relative;
