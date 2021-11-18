@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 h1 {
-    /* border: 3px #eee solid; */
-    color: blue;
+    border: 3px #eee solid;    color: blue;
     text-align: center;
     padding: 40px;
 }
@@ -86,7 +85,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../imagens/Layout.png");
+    background-image: url("../imagens/semente.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

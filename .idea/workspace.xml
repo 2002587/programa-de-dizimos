@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ccb58cd-12e2-4b1b-994d-6d9a1923f5b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/Layout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ceu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/mar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/semente.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imagens/semente.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imagens/semente.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
