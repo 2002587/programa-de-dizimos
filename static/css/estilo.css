@@ -21,12 +21,155 @@ border: 1px solid red;
 }
 
 body{
-    background-image: url(../imagens/Layout.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+    }
+
+
+h1, h2, h3{
+    font-family: Asap, sans-serif;
+    color: #000000;
+    }
+
+.botao{
+    color: #FFFFFF;
+    text-decoration:none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: .9em;
+    border-radius: 3px;
 }
 
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191970
+}
+
+nav > a{
+    text-decoration: nome;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{]
+    text-align: center
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*cabeçalho */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../imagens/Layout.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: #FFFFFF;
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #191970;
+    color: #FFFFFF;
+}
+
+#sobre h2{
+    color: #FFFFFF;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+
+#ofertar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#ofertar div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contato h2{
+    color: #000000;
+}
+
+footer{
+ text-align: center;
+ padding:10px;
+ background-color: #191970;
+ color: #FFFFFF;
+}
+
+footer a{
+    text-decoration: none;
+    color: #00FFFF;
+}
 .navbar-brand
 {
     position: relative;
@@ -36,3 +179,63 @@ body{
     background-size: contain;
 }
 
+@media sreen and (min-width: 768px){
+    /* nav */
+    nav{
+        flex-direction:row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+    /*cabeçalho */
+
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /* sobre */
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /*ofertar*/
+    #ofertar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start:
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #ofertar h2{
+        text-align: center:
+        width: 100%;
+    }
+
+    #ofertar div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+   /* contato */
+   #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+   }
+
+   #contato h2, #contato p{
+        width: 100%;
+   }
+}
