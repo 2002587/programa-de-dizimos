@@ -35,9 +35,37 @@
         <label for="content">Valor da contribuição:</label>
         <textarea name="content" placeholder="valor da contribuição"
                   class="form-control">{{ request.form['content'] }}</textarea>
+
     </div>
+
+
+<input type="file" id="upload"/>
+<img id="img" style="width: 500px"/>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZOsEEamd0YGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script>
+
+<script>
+    $(function(){
+        $('#upload').change(function(){
+        const file = $(this)[0].files[0]
+        const fileReader = new FileReader()
+        fileReader.onloadend = function(){
+            $('#img').attr('src',fileReader.result)
+        }
+        fileReader.readAsDataURL(file)
+        })
+    })
+</script>
+
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Enviar contribuição</button>
     </div>
+
 </form>
+
 {% endblock %}
+
+

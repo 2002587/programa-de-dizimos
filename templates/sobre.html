@@ -20,5 +20,12 @@
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Enviar contribuição</button>
     </div>
+
+    <form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">
+        <input type="file" name="pic" />
+        <input type="submit" value="Upload de arquivo"/>
+    </form>
+
+
 </form>
 {% endblock %}

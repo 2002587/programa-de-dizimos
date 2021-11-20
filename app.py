@@ -12,11 +12,12 @@ app.config['SECRET_KEY'] = 'your secret key'
 app.config["SQLALCHEMY_DATABASE_URI"] = database_file
 db = SQLAlchemy(app)
 
+
 class Posts(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     created = db.Column(db.DateTime, default=datetime.datetime.utcnow)
-    title = db.Column(db.String(100), nullable=False)
-    content = db.Column(db.String(80), nullable=False)
+    title = db.Column(db.String(80), nullable=False)
+    content = db.Column(db.String(288), nullable=False)
 
 @app.route('/')
 def index():
@@ -39,11 +40,10 @@ def post(post_id):
 def create():
     if request.method == 'POST':
         title = request.form['title']
-        telefone = request.form['telefone']
         content = request.form['content']
 
         if not title:
-            flash('Nome é obrigatório!!!')
+            flash('Título é obrigatório!!!')
         else:
             post = Posts(title=title, content=content)
             db.session.add(post)
@@ -59,7 +59,6 @@ def edit(id):
 
     if request.method == 'POST':
         title = request.form['title']
-        telefone = request.form['telefone']
         content = request.form['content']
 
         if not title:
@@ -79,3 +78,4 @@ def delete(id):
     db.session.commit()
     flash('"{}" foi apagado com sucesso!!'.format(post.title))
     return redirect(url_for('index'))
+

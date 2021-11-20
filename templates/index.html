@@ -3,7 +3,7 @@
 {% block content %}
 
 <header id="topo">
-      <h1> 3ª Igreja Presbiteriana de Carapicuiba</h1>
+      <h1> 3ª Igreja Presbiteriana de Carapicuíba</h1>
         <p class="lead text-justify">
         "Cada um contribua segundo propôs no seu coração, <br>
         não com tristeza ou por necessidade; porque Deus ama <br>
@@ -40,7 +40,7 @@
           				<address>
 					<ul class="list-unstyled">
 							<a>Av. Amazonas, 1.255, <br>
-							Cohab - Carapicuiba/SP<br></a>
+							Cohab - Carapicuíba/SP<br></a>
                     </ul>
 				</address>
       </div>
@@ -49,6 +49,23 @@
           <p> <a hreg="mailto: contato@prebisterianacarapicuiba.com">E-mail: contato@prebisterianacarapicuiba.com</a></p>
       </div>
 
+
+
+    <h1>{% block title %} Bem-vindo ao serviço de postagens! {% endblock %}</h1>
+    {% for post in posts %}
+        <a href="{{ url_for('post', post_id=post['id'])}}">
+            <h2>{{ post['title'] }}</h2>
+            <h2>{{ post['content'] }}</h2>
+            <h2>{{ post['telefone'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ post['created'] }}</span>
+        <a href="{{ url_for('edit', id=post['id']) }}">
+            <span class="badge badge-warning">Editar</span>
+        </a>
+        <hr>
+
+
+    {% endfor %}
 
 
 {% endblock %}
