@@ -5,12 +5,6 @@
     {% block title %} Envio de nova contribuição {% endblock %}
 </h1>
 
-<script type="text/javascript">
-    function atualizarNomeArquivo (caminho){
-    document.getElementById("imagem").src = caminho;
-    }
-</script>
-
 <form method="post">
     <div class="form-group">
         <label for="title">Nome do Contribuidor</label>
@@ -22,14 +16,9 @@
 
     <div class="form-group">
         <label for="telefone">Número Telefone</label>
-        <!--<input type="number" name="telefone"
+        <input type="number" name="telefone"
                placeholder="Número do Telefone" class="form-control"
                value="{{ request.form['telefone'] }}"
-        -->
-        <input type="tel" name="telefone"
-               placeholder="(XX) XXXXX-XXXX" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" class="form-control"
-               value="{{ request.form['telefone'] }}"
-
         </input>
     </div>
 
@@ -74,7 +63,6 @@
 
 --!>
 
-<!--
 <form action="/upload" enctype="multipart/form-data"method="post">
     <p>
         <input type="file" name="imagem" id="imagem">
@@ -84,21 +72,11 @@
     </p> --!>
 <!--</form> --!>
 
-<form>
-<p>
-    <input type="file" name="imagem" accept="image/*" onchange="atualizarNomeArquivo(this.value)">
-</p>
-</form>
-    <p>
-        <img src="#" alt="Imagem" width="200" id="imagem">
-    </p>
-    
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Enviar contribuição</button>
     </div>
 
 </form>
-
 
 {% endblock %}
 

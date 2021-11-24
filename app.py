@@ -1,9 +1,8 @@
-from flask import Flask, render_template, request, url_for, flash, redirect, send_file
+from flask import Flask, render_template, request, url_for, flash, redirect
 import os, datetime
 import sqlite3
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.exceptions import abort
-from werkzeug.utils import secure_filename
 
 project_dir = os.path.dirname(os.path.abspath(__file__))
 database_file = "sqlite:///{}".format(os.path.join(project_dir, "database.db"))
@@ -12,7 +11,6 @@ app = Flask('__name__')
 app.config['SECRET_KEY'] = 'your secret key'
 app.config["SQLALCHEMY_DATABASE_URI"] = database_file
 db = SQLAlchemy(app)
-UPLOAD_FOLDER = os.path.join(os.getcwd(), 'upload')
 
 class Posts(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -80,18 +78,9 @@ def delete(id):
     flash('"{}" foi apagado com sucesso!!'.format(post.title))
     return redirect(url_for('index'))
 
-
 @app.route('/upload', methods=['POST'])
 def upload():
     file = request.files['imagem']
     savePath = os.path.join(UPLOAD_FOLDER, secure.filename(file.filename))
     file.save(savePath)
     return 'UPLOAD feito com sucesso'
-
-@app.route('/get-file/<filename>')
-def getFile(filename):
-    file = os.path.join(UPLOAD_FOLDER + '.png')
-    return send_file(file, mimetype="imagem/png")
-
-if __name__ == '__main__':
-    app.run(debug=True)
