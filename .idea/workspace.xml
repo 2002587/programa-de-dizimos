@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ccb58cd-12e2-4b1b-994d-6d9a1923f5b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app_defeituoso.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/create_BKP_20211123.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app (outra cópia).py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projetos/testando/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projetos/testando/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projetos/testando/testando/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projetos/testando/testando/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projetos/testando/testando/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projetos/testando/testando/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projetos/testando/testando/wsgi.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,13 +5,8 @@
     {% block title %} Envio de nova contribuição {% endblock %}
 </h1>
 
-<script type="text/javascript">
-    function atualizarNomeArquivo (caminho){
-    document.getElementById("imagem").src = caminho;
-    }
-</script>
 
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="title">Nome do Contribuidor</label>
         <input type="text" name="title"
@@ -74,25 +69,18 @@
 
 --!>
 
-<!--
-<form action="/upload" enctype="multipart/form-data"method="post">
+
+<form action="/upload" enctype="multipart/form-data" method="post">
     <p>
-        <input type="file" name="imagem" id="imagem">
+        <!-- <input type="file" name="imagem" id="imagem"> -->
+        <input type="file" name="image" id="imagem" accept="image/*" onchange="document.getElementByID('nomeArquivo).textContent = this.value;">
     </p>
   <!--  <p>
         <button type="submit"> Enviar Imagem</button>
     </p> --!>
 <!--</form> --!>
 
-<form>
-<p>
-    <input type="file" name="imagem" accept="image/*" onchange="atualizarNomeArquivo(this.value)">
-</p>
-</form>
-    <p>
-        <img src="#" alt="Imagem" width="200" id="imagem">
-    </p>
-    
+
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Enviar contribuição</button>
     </div>
