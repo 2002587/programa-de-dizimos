@@ -9,9 +9,9 @@
 <form method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="title">Nome do Contribuidor</label>
-        <input type="text" name="title"
+        <input id="title" type="text" name="title" class="form-control"
                placeholder="Nome do contribuidor" class="form-control"
-               value="{{ request.form['title'] }}"
+               value="{{ request.form['title'] }}">
         </input>
     </div>
 
@@ -21,9 +21,9 @@
                placeholder="Número do Telefone" class="form-control"
                value="{{ request.form['telefone'] }}"
         -->
-        <input type="tel" name="telefone"
+        <input id="telefone" type="tel" name="telefone" class="form-control"
                placeholder="(XX) XXXXX-XXXX" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" class="form-control"
-               value="{{ request.form['telefone'] }}"
+               value="{{ request.form['telefone'] }}">
 
         </input>
     </div>
@@ -31,9 +31,9 @@
 
     <div class="form-group">
         <label for="campanha">Campanha</label>
-        <input type="text" name="campanha"
+        <input = "campanha" type="text" name="campanha" class="form-control"
                placeholder="Nome da Campanha" class="form-control"
-               value="{{ request.form['campanha'] }}"
+               value="{{ request.form['campanha'] }}">
         </input>
     </div>
 
@@ -73,7 +73,8 @@
 <form action="/upload" enctype="multipart/form-data" method="post">
     <p>
         <!-- <input type="file" name="imagem" id="imagem"> -->
-        <input type="file" name="image" id="imagem" accept="image/*" onchange="document.getElementByID('nomeArquivo).textContent = this.value;">
+        <!-- <input type="file" name="image" id="imagem" accept="image/*" onchange="document.getElementByID('nomeArquivo).textContent = this.value;"> -->
+        <input type="file" class="custom-file-input" name="image" id="imagem" accept="image/*" onchange="atualizarNomeArquivo(this.value)">
     </p>
   <!--  <p>
         <button type="submit"> Enviar Imagem</button>
