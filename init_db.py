@@ -12,7 +12,7 @@ cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
             ('First Post', 'Content for the first post')
             )
 
-cur.execute("INSERT INTO posts (title, content, campanha) VALUES (?, ?)",
+cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
             ('Second Post', 'Content for the second post')
             )
 
