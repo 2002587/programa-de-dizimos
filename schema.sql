@@ -5,8 +5,6 @@ CREATE TABLE posts (
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     title TEXT NOT NULL,
     content TEXT NOT NULL,
-    campanha TEXT NOT NULL,
-    telefone NUMBER NOT NULL,
 );
 
 cursor.execute(
