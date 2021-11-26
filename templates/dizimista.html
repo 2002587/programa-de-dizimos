@@ -5,10 +5,10 @@
 
     {% for post in posts %}
         <a href="{{ url_for('post', post_id=post['id'])}}">
-            <h2>{{ post['title'] }}</h2>
+            <h2>{{ post['Nome do Contribuidor'] }}</h2>
         </a>
         <a href="{{ url_for('post', post_id=post['id'])}}">
-            <h2>{{ post['content'] }}</h2>
+            <h2>{{ post['valor'] }}</h2>
         </a>
         <a href="{{ url_for('post', post_id=post['id'])}}">
             <h2>{{ post['telefone'] }}</h2>

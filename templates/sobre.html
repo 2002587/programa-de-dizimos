@@ -17,11 +17,18 @@
         <textarea name="content" placeholder="valor da contribuição"
                   class="form-control">{{ request.form['content'] }}</textarea>
     </div>
+
+
+<form method="post">
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Enviar contribuição</button>
+        <label for="campanha">Campanha</label>
+        <input type="text" name="campanha"
+               placeholder="Campanha" class="form-control"
+               value="{{ request.form['title'] }}"
+        </input>
     </div>
 
-    <form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">
+<form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">
         <input type="file" name="pic" />
         <input type="submit" value="Upload de arquivo"/>
     </form>

@@ -5,28 +5,28 @@
 
 <form method="post">
     <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" name="title" placeholder="Post title"
+        <label for="title">Nome do Contribuidor</label>
+        <input type="text" name="title" placeholder="Nome do Contribuidor"
                class="form-control"
                value="{{ request.form['title'] or post['title'] }}">
         </input>
     </div>
 
     <div class="form-group">
-        <label for="telefone">Content</label>
-        <textarea name="telefone" placeholder="Post content"
+        <label for="telefone">Telefone</label>
+        <textarea name="telefone" placeholder="Telefone"
                   class="form-control">{{ request.form['telefone'] or post['telefone'] }}</textarea>
     </div>
 
     <div class="form-group">
-        <label for="campanha">Content</label>
-        <textarea name="campanha" placeholder="Post content"
+        <label for="campanha">Campanha</label>
+        <textarea name="campanha" placeholder="Campanha"
                   class="form-control">{{ request.form['campanha'] or post['campanha'] }}</textarea>
     </div>
 
     <div class="form-group">
-        <label for="content">Content</label>
-        <textarea name="content" placeholder="Post content"
+        <label for="content">Valor</label>
+        <textarea name="content" placeholder="Valor"
                   class="form-control">{{ request.form['content'] or post['content'] }}</textarea>
     </div>
     <div class="form-group">

@@ -43,12 +43,11 @@ def create():
     if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
-        campanha = request.form['campanha']
 
         if not title:
             flash('Nome é obrigatório!!!')
         else:
-            post = Posts(title=title, content=content, campanha=campanha)
+            post = Posts(title=title, content=content)
             db.session.add(post)
             db.session.commit()
             return redirect(url_for('index'))
@@ -70,7 +69,6 @@ def edit(id):
     if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
-
         if not title:
             flash('Nome é obrigatório!!')
         else:
