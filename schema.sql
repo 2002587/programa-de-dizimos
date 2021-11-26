@@ -6,6 +6,7 @@ CREATE TABLE posts (
     title TEXT NOT NULL,
     content TEXT NOT NULL,
     campanha TEXT NOT NULL,
+    telefone NUMBER NOT NULL,
 );
 
 cursor.execute(
