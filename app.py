@@ -21,6 +21,7 @@ class Posts(db.Model):
     content = db.Column(db.String(80), nullable=False)
     campanha = db.Column(db.String(80), nullable=False)
 
+
 @app.route('/')
 def index():
     posts = Posts.query.all()
