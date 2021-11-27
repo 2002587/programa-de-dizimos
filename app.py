@@ -19,6 +19,7 @@ class Posts(db.Model):
     created = db.Column(db.DateTime, default=datetime.datetime.utcnow)
     title = db.Column(db.String(100), nullable=False)
     content = db.Column(db.String(80), nullable=False)
+    campanha = db.Column(db.String(80), nullable=False)
 
 @app.route('/')
 def index():
@@ -43,11 +44,12 @@ def create():
     if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
+        campanha = request.form['campanha']
 
         if not title:
             flash('Nome é obrigatório!!!')
         else:
-            post = Posts(title=title, content=content)
+            post = Posts(title=title, content=content, campanha=campanha)
             db.session.add(post)
             db.session.commit()
             return redirect(url_for('index'))
@@ -69,12 +71,14 @@ def edit(id):
     if request.method == 'POST':
         title = request.form['title']
         content = request.form['content']
+        campanha = request.form['campanha']
 
         if not title:
             flash('Nome é obrigatório!!')
         else:
             post.title = title
             post.content = content
+            post.campanha = campanha
 
             db.session.commit()
             return redirect(url_for('index'))
