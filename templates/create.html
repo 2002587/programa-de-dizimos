@@ -22,7 +22,7 @@
                value="{{ request.form['telefone'] }}"
         -->
         <input id="telefone" type="tel" name="telefone" class="form-control"
-               placeholder="(XX) XXXXX-XXXX" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" class="form-control"
+               placeholder="(XX) XXXXX-XXXX" class="form-control"
                value="{{ request.form['telefone'] }}">
 
         </input>
@@ -44,30 +44,6 @@
 
     </div>
 
-<!--
-<input type="file" id="upload"/>
-<img id="img" style="width: 500px"/>
-<script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZOsEEamd0YGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous">
-</script>
-
-<script>
-    $(function(){
-        $('#upload').change(function(){
-        const file = $(this)[0].files[0]
-        const fileReader = new FileReader()
-        fileReader.onloadend = function(){
-            $('#img').attr('src',fileReader.result)
-        }
-        fileReader.readAsDataURL(file)
-        })
-    })
-</script>
-
-
---!>
 
 
 <form action="/upload" enctype="multipart/form-data" method="post">
